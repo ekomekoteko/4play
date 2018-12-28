@@ -20,8 +20,10 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "g!";
+const prefix = "4";
 /////////////////////////
+client.user.setActivity("4play #By:Mal Team",{type: 'WATCHING'}); });
+
 ////////////////////////
 
 client.on('message', async msg => {
@@ -317,6 +319,20 @@ function play(guild, song) {
 }
 });
 
+client.on('message', msg => {
+
+    if (msg.content == '1join') {
+        if (msg.member.voiceChannel) {
+
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
+     }
+    }
+}
+})
+client.on('ready', () => {
+    client.channels.get("526434295099686924").join(); 
+    });
 
 
 
