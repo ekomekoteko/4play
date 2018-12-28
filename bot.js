@@ -22,7 +22,6 @@ const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "4";
 /////////////////////////
-client.user.setActivity("4play #By:Mal Team",{type: 'WATCHING'}); });
 
 ////////////////////////
 
