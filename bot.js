@@ -24,6 +24,10 @@ const prefix = "4";
 /////////////////////////
 
 ////////////////////////
+client.on('ready', () => {
+     client.user.setActivity(" 4play  By:#Mal Team",{type: 'WATCHING'})
+
+});
 
 client.on('message', async msg => {
   if (msg.author.bot) return undefined;
